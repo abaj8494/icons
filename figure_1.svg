@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="612pt"
-   height="612pt"
-   viewBox="0 0 611.99998 611.99998"
+   width="698.40002pt"
+   height="698.40002pt"
+   viewBox="0 0 698.4 698.4"
    version="1.1"
    id="svg2"
    sodipodi:docname="hsv.svg"
@@ -40,8 +40,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="612"
-       height="612"
+       width="698.40002"
+       height="698.40002"
        id="page2"
        margin="0"
        bleed="0" />
@@ -79,13 +79,10 @@
   <g
      clip-path="url(#circleClip)"
      id="g2"
-     transform="translate(-19.999998,-40.000002)">
+     transform="translate(14.11556,-1.4115565)">
     <g
        id="figure_1"
-       transform="translate(-14.11556,1.4115565)"
-       inkscape:export-filename="figure_1.svg"
-       inkscape:export-xdpi="38.144329"
-       inkscape:export-ydpi="38.144329">
+       transform="translate(-14.11556,1.4115565)">
       <g
          id="patch_1">
         <path
@@ -94,8 +91,7 @@
            id="path1" />
       </g>
       <g
-         id="axes_1"
-         transform="translate(15.527119,-1.4115559)">
+         id="axes_1">
         <g
            clip-path="url(#pac8762d02e)"
            id="g1">
