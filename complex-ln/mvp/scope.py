@@ -75,21 +75,15 @@ def main():
     # 1) Real part of ln(z)
     # ---------------------------------------------------
     fig_re, ax_re = plt.subplots(figsize=(6, 5), dpi=100)
-    # For discrete color bands, use contourf with a fixed number of levels
-    # letting Matplotlib pick the min/max automatically, or we can specify them
     cs_re = ax_re.contourf(
         X, Y, ln_real,
         levels=n_levels,
         cmap=args.cmap
     )
     ax_re.set_aspect('equal', 'box')
-    ax_re.set_title(r"Re$[\ln(x + i y)]$")
-    ax_re.set_xlabel("x")
-    ax_re.set_ylabel("y")
-    cbar_re = fig_re.colorbar(cs_re, ax=ax_re)
-    cbar_re.set_label("Real part")
-    fig_re.tight_layout()
-    fig_re.savefig("real_part.svg", format="svg")
+    ax_re.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig_re.savefig("real_part.svg", format="svg", bbox_inches='tight', pad_inches=0)
     plt.close(fig_re)
 
     # ---------------------------------------------------
@@ -102,13 +96,9 @@ def main():
         cmap=args.cmap
     )
     ax_im.set_aspect('equal', 'box')
-    ax_im.set_title(r"Im$[\ln(x + i y)]$")
-    ax_im.set_xlabel("x")
-    ax_im.set_ylabel("y")
-    cbar_im = fig_im.colorbar(cs_im, ax=ax_im)
-    cbar_im.set_label("Imag part")
-    fig_im.tight_layout()
-    fig_im.savefig("imag_part.svg", format="svg")
+    ax_im.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig_im.savefig("imag_part.svg", format="svg", bbox_inches='tight', pad_inches=0)
     plt.close(fig_im)
 
     # ---------------------------------------------------
@@ -121,13 +111,9 @@ def main():
         cmap=args.cmap
     )
     ax_abs.set_aspect('equal', 'box')
-    ax_abs.set_title(r"$|\ln(x + i y)|$")
-    ax_abs.set_xlabel("x")
-    ax_abs.set_ylabel("y")
-    cbar_abs = fig_abs.colorbar(cs_abs, ax=ax_abs)
-    cbar_abs.set_label("Magnitude")
-    fig_abs.tight_layout()
-    fig_abs.savefig("abs_part.svg", format="svg")
+    ax_abs.axis('off')
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+    fig_abs.savefig("abs_part.svg", format="svg", bbox_inches='tight', pad_inches=0)
     plt.close(fig_abs)
 
 
